@@ -1,125 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>KK Studio’s | Wedding Photography & Cinematography</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>KK Studio’s | Wedding Photography & Cinematography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #0e0e0e;
-            color: #f5f5f5;
-            line-height: 1.7;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
 
-        header {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-            url("https://images.unsplash.com/photo-1520857014576-2c4f4c972b57") center/cover no-repeat;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1520857014576-2c4f4c972b57") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-        }
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+}
 
-        header p {
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
+header p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
 
-        section {
-            padding: 70px 10%;
-        }
+section {
+    padding: 70px 10%;
+}
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #d4af37;
-        }
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d4af37;
+    text-align: center;
+}
 
-        .about, .why {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
+.about, .why {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
+.services, .pricing-grid, .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
 
-        .service-box {
-            background: #181818;
-            padding: 25px;
-            border-radius: 10px;
-            transition: 0.3s ease;
-        }
+.box {
+    background: #181818;
+    padding: 25px;
+    border-radius: 10px;
+    transition: .3s;
+}
 
-        .service-box:hover {
-            transform: translateY(-5px);
-            background: #1f1f1f;
-        }
+.box:hover {
+    transform: translateY(-5px);
+    background: #1f1f1f;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+.pricing {
+    background: #121212;
+}
 
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-        }
+.price-card {
+    background: #181818;
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    transition: .3s;
+}
 
-        .contact {
-            text-align: center;
-            background: #121212;
-            padding-bottom: 100px;
-        }
+.price-card:hover {
+    transform: translateY(-6px);
+    border-color: #d4af37;
+}
 
-        .contact h3 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
+.price-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+    font-size: 1.6rem;
+}
 
-        .whatsapp-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 35px;
-            background: #25D366;
-            color: #000;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-        }
+.price {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #000;
-            font-size: 0.9rem;
-            color: #aaa;
-        }
-    </style>
+.price small {
+    font-size: .9rem;
+    color: #aaa;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-card ul li {
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    text-align: center;
+    background: #0b0b0b;
+    padding-bottom: 100px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #25D366;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: .9rem;
+}
+</style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header>
     <div>
         <h1>KK Studio’s</h1>
@@ -132,39 +164,87 @@
     <div class="about">
         <h2>About Us</h2>
         <p>
-            KK Studio’s, led by Kamal Kumar, specialises in premium wedding photography and
-            cinematic videography. With a strong eye for detail, emotion, and storytelling,
-            we capture weddings as timeless visual narratives — preserving every ritual,
-            smile, and unscripted moment with artistic precision.
+            KK Studio’s, led by Kamal Kumar, delivers premium wedding photography
+            and cinematic films with a refined storytelling approach. Every wedding
+            is captured with attention to emotion, ritual, and authenticity, ensuring
+            timeless visual memories for generations.
         </p>
     </div>
 </section>
 
 <!-- SERVICES -->
 <section>
-    <h2>Our Wedding Services</h2>
+    <h2>Our Services</h2>
     <div class="services">
-        <div class="service-box">Candid Wedding Photography</div>
-        <div class="service-box">Cinematic Wedding Films</div>
-        <div class="service-box">Drone Photography & Videography</div>
-        <div class="service-box">Pre-Wedding Shoots</div>
-        <div class="service-box">Wedding Teasers & Highlights</div>
-        <div class="service-box">Lip-Dubs & Creative Reels</div>
-        <div class="service-box">Premium Wedding Albums</div>
-        <div class="service-box">Final Video Editing & Delivery</div>
+        <div class="box">Candid Wedding Photography</div>
+        <div class="box">Cinematic Wedding Films</div>
+        <div class="box">Drone Photography & Videography</div>
+        <div class="box">Pre-Wedding Shoots</div>
+        <div class="box">Wedding Teasers & Highlights</div>
+        <div class="box">Lip-Dubs & Creative Reels</div>
+        <div class="box">Premium Wedding Albums</div>
+        <div class="box">Final Video Editing & Delivery</div>
     </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- PRICING -->
+<section class="pricing">
+    <h2>Wedding Packages</h2>
+
+    <div class="pricing-grid">
+
+        <div class="price-card">
+            <h3>Classic Wedding</h3>
+            <div class="price">₹45,000 <small>onwards</small></div>
+            <ul>
+                <li>Traditional Photography</li>
+                <li>Traditional Videography</li>
+                <li>Full-Day Coverage</li>
+                <li>Basic Editing</li>
+                <li>Digital Delivery</li>
+            </ul>
+        </div>
+
+        <div class="price-card">
+            <h3>Premium Wedding</h3>
+            <div class="price">₹75,000 <small>onwards</small></div>
+            <ul>
+                <li>Candid Photography</li>
+                <li>Cinematic Videography</li>
+                <li>Pre-Wedding Shoot</li>
+                <li>Highlight Film</li>
+                <li>Edited Photos & Videos</li>
+            </ul>
+        </div>
+
+        <div class="price-card">
+            <h3>Luxury Wedding</h3>
+            <div class="price">₹1,20,000 <small>onwards</small></div>
+            <ul>
+                <li>Candid + Traditional Coverage</li>
+                <li>Cinematic Film + Teaser</li>
+                <li>Drone Coverage</li>
+                <li>Premium Wedding Album</li>
+                <li>Creative Reels & Lip-Dubs</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:30px; font-size:.9rem; color:#bbb;">
+        *Packages are customisable based on wedding duration, events, and location.
+    </p>
+</section>
+
+<!-- WHY US -->
 <section>
     <div class="why">
         <h2>Why Choose KK Studio’s</h2>
         <p>
-            Every wedding is unique, and our approach reflects that belief.
-            We combine modern equipment, cinematic techniques, and a discreet on-ground
-            presence to deliver visuals that feel natural, elegant, and emotionally rich.
-            From intimate ceremonies to grand destination weddings, we ensure professional
-            execution from start to finish.
+            With professional equipment, cinematic techniques, and a discreet
+            on-ground presence, KK Studio’s ensures a seamless experience.
+            From intimate ceremonies to grand weddings, quality and commitment
+            remain uncompromised.
         </p>
     </div>
 </section>
@@ -173,21 +253,21 @@
 <section>
     <h2>Gallery Preview</h2>
     <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Wedding Moment">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Bride Groom">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
     </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact">
-    <h2>Contact Us</h2>
-    <h3>Kamal Kumar – KK Studio’s</h3>
-    <p>📞 Phone: 9828113288</p>
+    <h2>Contact</h2>
+    <p><strong>Kamal Kumar – KK Studio’s</strong></p>
+    <p>📞 9828113288</p>
 
-    <a class="whatsapp-btn" 
-       href="https://wa.me/919828113288" 
+    <a class="whatsapp-btn"
+       href="https://wa.me/919828113288"
        target="_blank">
-       Chat on WhatsApp
+       Enquire on WhatsApp
     </a>
 </section>
 
